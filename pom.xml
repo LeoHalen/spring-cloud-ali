@@ -12,6 +12,7 @@
         <module>nacos-config</module>
         <module>nacos-consumer</module>
         <module>nacos-provider</module>
+        <module>sentinel-config</module>
     </modules>
 
     <parent>
@@ -27,7 +28,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+        <sentinel.version>1.7.0</sentinel.version>
 <!--        <spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>-->
+        <lombok.version>1.18.8</lombok.version>
     </properties>
 
     <repositories>
@@ -93,6 +96,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!--<dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
