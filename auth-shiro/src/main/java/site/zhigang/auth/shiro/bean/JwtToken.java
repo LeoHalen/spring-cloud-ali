@@ -6,13 +6,13 @@ import org.apache.shiro.authc.AuthenticationToken;
 /**
  * Create by Zg.Li · 2019/12/11
  */
-public class JWTToken implements AuthenticationToken {
+public class JwtToken implements AuthenticationToken {
     private static final long serialVersionUID = 1250166508152483573L;
 
     @Getter
     private final String token;
 
-    public JWTToken(String token) {
+    public JwtToken(String token) {
         this.token = token;
     }
 
