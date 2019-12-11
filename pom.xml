@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>site.zhigang</groupId>
+    <groupId>site.zhigang.pocketcloud</groupId>
     <artifactId>spring-cloud-ali</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -13,6 +13,9 @@
         <module>nacos-consumer</module>
         <module>nacos-provider</module>
         <module>sentinel-config</module>
+        <module>auth-common</module>
+        <module>auth</module>
+        <module>auth-shiro</module>
     </modules>
 
     <parent>
@@ -31,6 +34,9 @@
         <sentinel.version>1.7.0</sentinel.version>
 <!--        <spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>-->
         <lombok.version>1.18.8</lombok.version>
+        <shiro.version>1.4.2</shiro.version>
+        <slf4j.version>1.7.29</slf4j.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <repositories>
@@ -104,6 +110,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
