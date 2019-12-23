@@ -1,4 +1,4 @@
-package site.zhigang.auth.shiro.bean;
+package site.zhigang.auth.shiro.auth;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Strings;
@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
-import site.zhigang.auth.common.constants.RestCodeConstant;
-import site.zhigang.auth.common.response.BaseResponse;
+import site.zhigang.pocketcloud.auth.common.constants.RestCodeConstant;
+import site.zhigang.pocketcloud.auth.common.response.BaseResponse;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.Map;
 
 /**

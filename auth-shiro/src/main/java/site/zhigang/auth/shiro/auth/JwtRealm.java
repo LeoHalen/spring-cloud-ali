@@ -1,4 +1,4 @@
-package site.zhigang.auth.shiro.bean;
+package site.zhigang.auth.shiro.auth;
 
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -10,8 +10,8 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
-import site.zhigang.auth.common.bean.AccountInfo;
-import site.zhigang.auth.common.service.AccountService;
+import site.zhigang.pocketcloud.auth.common.bean.AccountInfo;
+import site.zhigang.pocketcloud.auth.common.service.AccountService;
 
 import java.util.Set;
 import java.util.stream.Collectors;

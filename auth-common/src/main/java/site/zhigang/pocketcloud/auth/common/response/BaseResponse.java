@@ -1,4 +1,4 @@
-package site.zhigang.auth.common.response;
+package site.zhigang.pocketcloud.auth.common.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

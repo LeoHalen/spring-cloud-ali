@@ -1,4 +1,4 @@
-package site.zhigang.auth.common.bean;
+package site.zhigang.pocketcloud.auth.common.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

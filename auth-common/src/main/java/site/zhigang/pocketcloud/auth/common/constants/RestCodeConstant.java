@@ -1,4 +1,4 @@
-package site.zhigang.auth.common.constants;
+package site.zhigang.pocketcloud.auth.common.constants;
 
 /**
  * @Author Zg.Li · 2019/12/14

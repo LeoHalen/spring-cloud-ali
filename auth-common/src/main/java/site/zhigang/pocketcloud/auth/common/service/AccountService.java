@@ -1,6 +1,6 @@
-package site.zhigang.auth.common.service;
+package site.zhigang.pocketcloud.auth.common.service;
 
-import site.zhigang.auth.common.bean.AccountInfo;
+import site.zhigang.pocketcloud.auth.common.bean.AccountInfo;
 
 /**
  * Create by Zg.Li · 2019/12/11

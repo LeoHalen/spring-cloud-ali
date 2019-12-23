@@ -1,4 +1,4 @@
-package site.zhigang.auth.shiro.bean;
+package site.zhigang.auth.shiro.auth;
 
 import lombok.Getter;
 import org.apache.shiro.authc.AuthenticationToken;
