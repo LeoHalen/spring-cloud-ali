@@ -42,6 +42,9 @@ public class ShiroConfiguration {
         return new JwtRealm();
     }
 
+    /**
+     * 安全管理器
+     */
     @Bean
     public SecurityManager securityManager(@Qualifier("jwtRealm") JwtRealm jwtRealm) {
         DefaultSecurityManager securityManager = new DefaultSecurityManager();
@@ -60,6 +63,9 @@ public class ShiroConfiguration {
         return securityManager;
     }
 
+    /**
+     * shiro基础配置
+     */
     @Bean("shiroFilter")
     public ShiroFilterFactoryBean shiroFilterFactory(SecurityManager securityManager, JwtProperties jwtProperties) {
         ShiroFilterFactoryBean filterFactoryBean = new ShiroFilterFactoryBean();
@@ -92,7 +98,8 @@ public class ShiroConfiguration {
     }
 
     /**
-     * 下面的代码是添加注解支持
+     * 以下代码是开启shiro-aop注解支持
+     * 使用代理方式所以需要开启支持
      */
     @Bean
     @DependsOn("lifecycleBeanPostProcessor")
