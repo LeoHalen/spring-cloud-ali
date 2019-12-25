@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Create by Zg.Li · 2019/12/11
+ * @Author Zg.Li · 2019/12/11
  */
 public class JwtRealm extends AuthorizingRealm {
 

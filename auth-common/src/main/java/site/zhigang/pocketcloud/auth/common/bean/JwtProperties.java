@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * Create by Zg.Li · 2019/12/23
+ * @Author Zg.Li · 2019/12/23
  */
 @Data
 public class JwtProperties {

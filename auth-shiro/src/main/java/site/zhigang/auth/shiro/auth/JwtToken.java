@@ -4,7 +4,7 @@ import lombok.Getter;
 import org.apache.shiro.authc.AuthenticationToken;
 
 /**
- * Create by Zg.Li · 2019/12/11
+ * @Author Zg.Li · 2019/12/11
  */
 public class JwtToken implements AuthenticationToken {
     private static final long serialVersionUID = 1250166508152483573L;

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Create by Zg.Li · 2019/12/10
+ * @Author Zg.Li · 2019/12/10
  */
 @SpringBootApplication
 public class TestApplication {

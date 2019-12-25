@@ -16,6 +16,7 @@
         <module>auth-common</module>
         <module>auth</module>
         <module>auth-shiro</module>
+        <module>response-common</module>
     </modules>
 
     <parent>

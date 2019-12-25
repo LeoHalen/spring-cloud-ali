@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Create by Zg.Li · 2019/12/23
+ * @Author Zg.Li · 2019/12/23
  */
 @Slf4j
 public class ShiroConfiguration {
