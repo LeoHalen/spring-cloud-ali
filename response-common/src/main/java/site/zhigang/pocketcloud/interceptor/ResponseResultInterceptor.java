@@ -13,7 +13,9 @@ import java.lang.reflect.Method;
  */
 public class ResponseResultInterceptor implements HandlerInterceptor {
 
-    // 使用统一结果响应注解标记
+    /**
+     * 使用统一结果响应注解标记
+     */
     private static final String RESPONSE_RESULT_SIGN = "RESPONSE-RESULT-SIGN";
 
     @Override
