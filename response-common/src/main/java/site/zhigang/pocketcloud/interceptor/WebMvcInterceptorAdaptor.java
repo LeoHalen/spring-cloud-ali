@@ -18,7 +18,9 @@ public class WebMvcInterceptorAdaptor implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new ResponseResultInterceptor())    // 添加统一结果响应拦截器
-                .addPathPatterns("/**");                            // 添加拦截路径
+        // 添加统一结果响应拦截器
+        registry.addInterceptor(new ResponseResultInterceptor())
+                // 添加拦截路径
+                .addPathPatterns("/**");
     }
 }

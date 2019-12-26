@@ -17,13 +17,16 @@ import site.zhigang.pocketcloud.bean.ResponseResultBean;
 import javax.servlet.http.HttpServletRequest;
 
 /**
+ * 响应体格式统一处理
  * @Author Zg.Li · 2019/12/25
  */
 @Slf4j
 @ControllerAdvice
-public class ResponseResultHandler implements ResponseBodyAdvice<T> {
+public class ResponseResultHandler implements ResponseBodyAdvice<Object> {
 
-    // 使用统一结果响应注解标记
+    /**
+     * 使用统一结果响应注解标记
+     */
     private static final String RESPONSE_RESULT_SIGN = "RESPONSE-RESULT-SIGN";
 
 
@@ -37,12 +40,12 @@ public class ResponseResultHandler implements ResponseBodyAdvice<T> {
     }
 
     @Override
-    public T beforeBodyWrite(T body, MethodParameter methodParameter, MediaType mediaType
+    public Object beforeBodyWrite(Object body, MethodParameter methodParameter, MediaType mediaType
             , Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest
             , ServerHttpResponse serverHttpResponse) {
-        log.info("Response Body rewrite formatting...");
+        log.info("Uniform result response formatting.");
         if (body instanceof ErrorResponseResult) {
-            log.info("Response Body rewrite error info Formatting...");
+            log.info("Uniform error result response formatting.");
             ErrorResponseResult errorResult = (ErrorResponseResult) body;
             return ResponseResultBean.failure(errorResult.getErrorResultStatus(), errorResult.getErrorData());
         }
