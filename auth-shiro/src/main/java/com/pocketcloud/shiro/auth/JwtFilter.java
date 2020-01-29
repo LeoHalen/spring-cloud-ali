@@ -7,8 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
-import com.pocketcloud.response.common.common.constants.RestCodeConstant;
-import com.pocketcloud.response.common.common.response.BaseResponse;
+import com.pocketcloud.auth.common.constants.RestCodeConstant;
+import com.pocketcloud.auth.common.response.BaseResponse;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;

@@ -10,8 +10,8 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.pocketcloud.response.common.common.bean.AccountInfo;
-import com.pocketcloud.response.common.common.service.AccountService;
+import com.pocketcloud.auth.common.bean.AccountInfo;
+import com.pocketcloud.auth.common.service.AccountService;
 
 import java.util.Set;
 import java.util.stream.Collectors;

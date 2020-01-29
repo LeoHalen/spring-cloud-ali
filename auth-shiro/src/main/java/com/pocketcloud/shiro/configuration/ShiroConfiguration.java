@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
 import com.pocketcloud.shiro.auth.JwtFilter;
 import com.pocketcloud.shiro.auth.JwtRealm;
-import com.pocketcloud.response.common.common.bean.JwtProperties;
+import com.pocketcloud.auth.common.bean.JwtProperties;
 
 import javax.servlet.Filter;
 import java.util.List;
