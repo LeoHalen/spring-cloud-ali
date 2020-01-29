@@ -1,6 +1,6 @@
-package com.pocketcloud.auth.handler;
+package com.pocketcloud.response.common.handler;
 
-import com.pocketcloud.auth.annotation.ResponseResult;
+import com.pocketcloud.response.common.annotation.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
-import com.pocketcloud.auth.bean.ErrorResponseResult;
-import com.pocketcloud.auth.bean.ResponseResultBean;
+import com.pocketcloud.response.common.bean.ErrorResponseResult;
+import com.pocketcloud.response.common.bean.ResponseResultBean;
 
 import javax.servlet.http.HttpServletRequest;
 

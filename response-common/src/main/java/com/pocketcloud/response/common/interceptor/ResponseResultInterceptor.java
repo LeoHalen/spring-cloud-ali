@@ -1,8 +1,8 @@
-package com.pocketcloud.auth.interceptor;
+package com.pocketcloud.response.common.interceptor;
 
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
-import com.pocketcloud.auth.annotation.ResponseResult;
+import com.pocketcloud.response.common.annotation.ResponseResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

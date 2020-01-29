@@ -1,4 +1,4 @@
-package com.pocketcloud.auth.constant;
+package com.pocketcloud.response.common.constant;
 
 
 import lombok.extern.slf4j.Slf4j;

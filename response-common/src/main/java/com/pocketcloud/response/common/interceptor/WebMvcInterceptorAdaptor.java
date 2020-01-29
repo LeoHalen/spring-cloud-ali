@@ -1,4 +1,4 @@
-package com.pocketcloud.auth.interceptor;
+package com.pocketcloud.response.common.interceptor;
 
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

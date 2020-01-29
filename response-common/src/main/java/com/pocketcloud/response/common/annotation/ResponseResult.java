@@ -1,4 +1,4 @@
-package com.pocketcloud.auth.annotation;
+package com.pocketcloud.response.common.annotation;
 
 
 import java.lang.annotation.*;

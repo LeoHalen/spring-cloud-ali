@@ -1,4 +1,4 @@
-package com.pocketcloud.auth.constant;
+package com.pocketcloud.response.common.constant;
 
 /**
  * @Author Zg.Li · 2019/12/25

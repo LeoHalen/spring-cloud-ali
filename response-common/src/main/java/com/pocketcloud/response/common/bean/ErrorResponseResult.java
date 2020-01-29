@@ -1,6 +1,6 @@
-package com.pocketcloud.auth.bean;
+package com.pocketcloud.response.common.bean;
 
-import com.pocketcloud.auth.constant.ResultStatusEnum;
+import com.pocketcloud.response.common.constant.ResultStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
