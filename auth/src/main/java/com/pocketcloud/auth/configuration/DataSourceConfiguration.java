@@ -42,7 +42,7 @@ public class DataSourceConfiguration {
 		bean.setDataSource(dataSource);
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 		bean.setMapperLocations(
-				resolver.getResource("classpath:mapper/*.xml"));
+				resolver.getResource("classpath:mapping/*.xml"));
 		return bean.getObject();
 	}
 

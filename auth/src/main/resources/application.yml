@@ -30,3 +30,16 @@ spring:
         max-idle: 8
         # 连接池中的最小空闲连接 默认 0
         min-idle: 0
+
+# 数据源
+pocket:
+  datasource:
+    pocket-cloud:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://123.56.216.221:3306/pocket_cloud?useUnicode=true&characterEncoding=utf8
+      username: halen
+      password: 123456
+      #      validationQuery: SELECT 1
+      connection-test-query: SELECT 1
+      test-while-idle: true
+      time-between-eviction-runs-millis: 3600000

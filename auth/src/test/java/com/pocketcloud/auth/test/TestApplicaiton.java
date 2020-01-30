@@ -21,7 +21,7 @@ public class TestApplicaiton {
 	public void redisTest() {
 		// redis存储数据
 		String key = "name";
-		redisTemplate.opsForValue().set(key, "yukong");
+		redisTemplate.opsForValue().set(key, "halen");
 		// 获取数据
 		String value = (String) redisTemplate.opsForValue().get(key);
 		System.out.println("获取缓存中key为" + key + "的值为：" + value);

@@ -2,7 +2,7 @@ package com.pocketcloud.auth.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.pocketcloud.auth.annotation.ResponseResult;
+import com.pocketcloud.response.common.annotation.ResponseResult;
 
 /**
  * @Author Zg.Li · 2019/12/25
