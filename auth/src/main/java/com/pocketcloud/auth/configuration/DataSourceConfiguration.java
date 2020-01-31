@@ -15,6 +15,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
@@ -22,7 +23,8 @@ import javax.sql.DataSource;
  * @Author Zg.Li · 2020/1/26
  */
 @Configuration
-@MapperScan(basePackages = "com.pocketcloud.response.common.mapper", sqlSessionTemplateRef = "pocketCloudSqlSessionTemplate")
+@MapperScan(basePackages = "com.pocketcloud.auth.mapper", sqlSessionTemplateRef = "pocketCloudSqlSessionTemplate")
+@EnableTransactionManagement(proxyTargetClass = true)
 public class DataSourceConfiguration {
 
 	@Bean("pocketCloudHikariConfig")
@@ -41,8 +43,8 @@ public class DataSourceConfiguration {
 		SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
 		bean.setDataSource(dataSource);
 		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-		bean.setMapperLocations(
-				resolver.getResource("classpath:mapping/*.xml"));
+//		bean.setMapperLocations(
+//				resolver.getResource("classpath:mapping/*.xml"));
 		return bean.getObject();
 	}
 
