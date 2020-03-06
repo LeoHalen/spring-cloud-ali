@@ -33,11 +33,12 @@ public class RedisCacheAutoConfiguration extends CachingConfigurerSupport {
 	public RedisTemplate<String, Serializable> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
 		RedisTemplate<String, Serializable> redisTemplate = new RedisTemplate<>();
 		redisTemplate.setConnectionFactory(redisConnectionFactory);
-		//解决查询缓存转换异常的问题
+		// 解决查询缓存转换异常的问题
 		ObjectMapper om = new ObjectMapper();
 		om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
 		om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
 		GenericJackson2JsonRedisSerializer valueSerializer = new GenericJackson2JsonRedisSerializer(om);
+		// 解决long 类型转换异常的问题
 		redisTemplate.setKeySerializer(new StringRedisSerializer());
 		redisTemplate.setValueSerializer(valueSerializer);
 		redisTemplate.setHashValueSerializer(valueSerializer);
